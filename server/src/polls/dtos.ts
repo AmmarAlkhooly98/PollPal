@@ -24,3 +24,17 @@ export class JoinPollDto {
   @Length(1, 18)
   name: string;
 }
+
+export class RejoinPollDto {
+  @IsString()
+  @Length(6, 6)
+  pollID: string;
+
+  @IsString()
+  @Length(1, 18)
+  name: string;
+
+  @IsString()
+  @Length(6, 6)
+  userID: string;
+}
